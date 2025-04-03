@@ -8,10 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Three.js Game Jam",
   description: "Coming Soon",
-  generator: 'v0.dev',
-  icons: {
-    icon: '/favicon.ico',
-  }
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
