@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Twitter } from "lucide-react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import {
   OrbitControls,
   Stars,
@@ -12,7 +12,17 @@ import {
   MeshDistortMaterial,
 } from "@react-three/drei";
 import Logo from "@/components/Logo";
-import { AddToCalendarButton } from "add-to-calendar-button-react";
+import dynamic from "next/dynamic";
+import Script from "next/script";
+import ConvertKitForm from "convertkit-react";
+
+const AddToCalendarButton = dynamic(
+  () =>
+    import("add-to-calendar-button-react").then(
+      (mod) => mod.AddToCalendarButton
+    ),
+  { ssr: false }
+);
 
 function CubeField() {
   const cubes = [];
@@ -50,7 +60,7 @@ function CubeField() {
 }
 
 function Scene() {
-  const controlsRef = useRef(null);
+  const controlsRef = useRef<any>(null);
 
   useFrame(({ clock }) => {
     if (controlsRef.current) {
@@ -95,13 +105,16 @@ export default function Home() {
         <div className="w-48 h-48 md:w-64 md:h-64 relative">
           <Logo />
         </div>
-        <h1 className="text-gray-100 text-3xl md:text-4xl font-bold tracking-wider">
-          Three.js Game Jam
-        </h1>
-        <h2 className="text-gray-100 text-xl md:text-2xl font-bold tracking-wider">
-          May 16-19
-        </h2>
-        <div className="mt-4">
+        <div className="space-y-4 text-center">
+          <h1 className="text-gray-100 text-3xl md:text-4xl font-bold tracking-wider">
+            Three.js Game Jam
+          </h1>
+          <h2 className="text-gray-100 text-xl md:text-2xl font-bold tracking-wider">
+            May 16-19
+          </h2>
+        </div>
+        <div className="flex flex-col items-center gap-4">
+          <EmailForm />
           <AddToCalendarButton
             name="Three.js Game Jam"
             description="Join us for a weekend of creating games with Three.js! https://threejsgamejam.com"
@@ -168,5 +181,24 @@ function Cube({
         />
       </Box>
     </Float>
+  );
+}
+
+function EmailForm() {
+  return (
+    <div className="flex flex-col px-4 sm:px-0">
+      <ConvertKitForm
+        formId="7879113"
+        hideName
+        template="clare"
+        emailPlaceholder="Enter your email"
+        submitText="Get Notified!"
+        buttonBackground="#F0F0F2"
+        buttonColor="#000000"
+      />
+      <span className="text-xs text-gray-300 -mt-2 mb-3 ml-2">
+        Just event updates, no spam!
+      </span>
+    </div>
   );
 }

@@ -106,3 +106,7 @@ canvas {
   height: 100%;
 }
 
+.formkit-powered-by-convertkit {
+  display: none !important;
+}
+

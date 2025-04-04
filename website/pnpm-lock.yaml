@@ -35,6 +35,9 @@ importers:
       cmdk:
         specifier: 1.0.4
         version: 1.0.4(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      convertkit-react:
+        specifier: ^1.5.5
+        version: 1.5.5
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
@@ -2074,6 +2077,9 @@ packages:
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
+  convertkit-react@1.5.5:
+    resolution: {integrity: sha512-r9WV+SQ14ZZGOxAAvKhAwVzsBSGPGaGlfT1YJeyT/jB6MeP9epdG3HwWGcnacuFmYHUmEibxm4CQiMZT0rapEw==}
+
   core-js-compat@3.41.0:
     resolution: {integrity: sha512-RFsU9LySVue9RTwdDVX/T0e2Y6jRYWXERKElIjpuEOEnxaXffI0X7RUwVzfYLfzuLXSNJDYoRYUAmRUcyln20A==}
 
@@ -3722,6 +3728,10 @@ packages:
     peerDependenciesMeta:
       react-dom:
         optional: true
+
+  react@17.0.2:
+    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
+    engines: {node: '>=0.10.0'}
 
   react@19.0.0:
     resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
@@ -7061,6 +7071,11 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
+  convertkit-react@1.5.5:
+    dependencies:
+      prop-types: 15.8.1
+      react: 17.0.2
+
   core-js-compat@3.41.0:
     dependencies:
       browserslist: 4.24.4
@@ -8806,6 +8821,11 @@ snapshots:
       react: 19.0.0
     optionalDependencies:
       react-dom: 19.0.0(react@19.0.0)
+
+  react@17.0.2:
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
 
   react@19.0.0: {}
 
