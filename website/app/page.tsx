@@ -94,9 +94,12 @@ export default function Home() {
         <div className="w-48 h-48 md:w-64 md:h-64 relative">
           <Logo />
         </div>
-        <h1 className="text-white text-3xl md:text-4xl font-bold tracking-wider">
-          COMING SOON
+        <h1 className="text-gray-100 text-3xl md:text-4xl font-bold tracking-wider">
+          Three.js Game Jam
         </h1>
+        <h2 className="text-gray-100 text-xl md:text-2xl font-bold tracking-wider">
+          May 16-19
+        </h2>
         <Link
           href="https://twitter.com/threejsgamejam"
           target="_blank"
