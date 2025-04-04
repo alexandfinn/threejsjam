@@ -102,7 +102,7 @@ export default function Home() {
       </div>
 
       <div className="z-10 flex flex-col items-center justify-center gap-8">
-        <div className="w-48 h-48 md:w-64 md:h-64 relative">
+        <div className="w-40 h-40 md:w-56 md:h-56 relative mb-[-1rem]">
           <Logo />
         </div>
         <div className="space-y-4 text-center">
@@ -186,7 +186,7 @@ function Cube({
 
 function EmailForm() {
   return (
-    <div className="flex flex-col px-4 sm:px-0">
+    <div className="flex flex-col">
       <ConvertKitForm
         formId="7879113"
         hideName
