@@ -12,6 +12,7 @@ import {
   MeshDistortMaterial,
 } from "@react-three/drei";
 import Logo from "@/components/Logo";
+import { AddToCalendarButton } from "add-to-calendar-button-react";
 
 function CubeField() {
   const cubes = [];
@@ -100,6 +101,19 @@ export default function Home() {
         <h2 className="text-gray-100 text-xl md:text-2xl font-bold tracking-wider">
           May 16-19
         </h2>
+        <div className="mt-4">
+          <AddToCalendarButton
+            name="Three.js Game Jam"
+            description="Join us for a weekend of creating games with Three.js! https://threejsgamejam.com"
+            startDate="2024-05-16"
+            startTime="20:00"
+            endDate="2024-05-19"
+            endTime="23:00"
+            timeZone="UTC"
+            options={["Google", "Apple", "iCal"]}
+            buttonStyle="default"
+          />
+        </div>
         <Link
           href="https://twitter.com/threejsgamejam"
           target="_blank"

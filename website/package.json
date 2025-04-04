@@ -10,12 +10,20 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
+    "add-to-calendar-button": "^2.8.6",
+    "add-to-calendar-button-react": "^2.8.5",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
+    "expo": "latest",
+    "expo-asset": "latest",
+    "expo-file-system": "latest",
+    "expo-gl": "latest",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
     "next": "15.2.4",
@@ -23,21 +31,15 @@
     "react": "^19",
     "react-dom": "^19",
     "react-hook-form": "^7.54.1",
+    "react-native": "latest",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^0.9.6",
-    "zod": "^3.24.1",
-    "expo": "latest",
-    "expo-asset": "latest",
-    "expo-file-system": "latest",
-    "expo-gl": "latest",
-    "react-native": "latest",
     "three": "latest",
-    "@react-three/fiber": "latest",
-    "@react-three/drei": "latest"
+    "vaul": "^0.9.6",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@types/node": "^22",
@@ -46,5 +48,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
 }
