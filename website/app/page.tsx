@@ -118,9 +118,9 @@ export default function Home() {
           <AddToCalendarButton
             name="Three.js Game Jam"
             description="Join us for a weekend of creating games with Three.js! https://threejsgamejam.com"
-            startDate="2024-05-16"
+            startDate="2025-05-16"
             startTime="20:00"
-            endDate="2024-05-19"
+            endDate="2025-05-19"
             endTime="23:00"
             timeZone="UTC"
             options={["Google", "Apple", "iCal"]}
