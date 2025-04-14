@@ -110,7 +110,7 @@ export default function Home() {
             Three.js Game Jam
           </h1>
           <h2 className="text-gray-100 text-xl md:text-2xl font-bold tracking-wider">
-            May 16-19, 2025
+            May 16-30, 2025
           </h2>
         </div>
         <div className="flex flex-col items-center gap-4">
@@ -120,7 +120,7 @@ export default function Home() {
             description="Join us for a weekend of creating games with Three.js! https://threejsgamejam.com"
             startDate="2025-05-16"
             startTime="20:00"
-            endDate="2025-05-19"
+            endDate="2025-05-30"
             endTime="23:00"
             timeZone="UTC"
             options={["Google", "Apple", "iCal"]}
